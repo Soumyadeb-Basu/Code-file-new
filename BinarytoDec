@@ -1,0 +1,31 @@
+//package first_proj;
+import java.util.*;
+class BinarytoDec 
+{
+	int d,s,i=0;
+	int bintodec(int n)
+	{
+	while(n>0)
+	{
+		d=n%10;
+		s+=Math.pow(2, i)*d;
+		i++;
+		n/=10;
+	}
+	return s;
+	}
+
+public static void main(String[] args) {
+	// TODO Auto-generated method stub
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter a Binary number: ");
+	int n= s.nextInt();
+	BinarytoDec o=new BinarytoDec(); 
+	 int r=o.bintodec(n);
+	 System.out.println(r);
+	 s.close();
+}
+}
+	
+	
+	
